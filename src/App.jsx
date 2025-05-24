@@ -107,8 +107,8 @@ function App() {
       </header>
 
       <section className="2xl:container mt-[75px] mx-auto">
-        <div className="w-[98%] mx-auto  bg-white flex items-center justify-around overflow-auto gap-[20px] p-[16px]">
-          {categories.slice(5, 18).map((cat) => (
+        <div className="w-[98%] mx-auto  bg-white flex items-center justify-around overflow-auto custom-scrollbar gap-[20px] p-[16px]">
+          {categories.slice(5).map((cat) => (
             <div className="flex flex-col justify-center items-center gap-[12px] max-w-[100px] text-center">
               <div className="category-bg w-[55px] h-[55px] rounded-md transform transition-all duration-300 ease-in-out hover:scale-[1.03] cursor-pointer">
                 <img className="w-[100%] h-[100%]" src={cat.thumbnail} />
@@ -190,7 +190,7 @@ function App() {
 
       <section className="2xl:container my-[16px] mx-auto">
         <div className="w-[98%] mx-auto   flex items-center min-h-[126px]  justify-between">
-          <div className="p-[16px] bg-white min-h-[289px] w-full overflow-auto">
+          <div className="p-[16px] bg-white min-h-[289px] w-full overflow-auto custom-scrollbar">
             <h1 className="text-[22px] leading-[30px]  not-italic font-semibold">
               Best Deals On Labtops
             </h1>
@@ -226,13 +226,13 @@ function App() {
       </section>
 
       <section className="2xl:container my-[16px] mx-auto">
-        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto">
+        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto  custom-scrollbar">
           <div className="p-[16px]">
             <h1 className="text-[22px] leading-[30px]  not-italic font-semibold">
             Beauty, Food, Toys & more
             </h1>
             <div className="flex gap-[10px]">
-              {groceries.slice(0,8).map((lap) => (
+              {groceries.map((lap) => (
                 <div className="flex flex-col items-center w-[152px]">
                   <div className="w-[152px] h-[152px] transform transition-all duration-300 ease-in-out hover:scale-[1.03] cursor-pointer">
                     <img
@@ -255,7 +255,7 @@ function App() {
       </section>
 
       <section className="2xl:container my-[16px] mx-auto">
-        <div className="w-[98%] mx-auto gap-[12px] grid grid-cols-3">
+        <div className="w-[98%] mx-auto gap-[12px] grid md:grid-cols-3">
           <div className="bg-white">
             <div className="flex justify-between items-center p-[16px]">
               <h1 className="text-[22px] leading-[30px]  not-italic font-semibold">
@@ -400,13 +400,13 @@ function App() {
         </div>
       </section>
       <section className="2xl:container my-[16px] mx-auto">
-        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto">
+        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto custom-scrollbar">
           <div className="p-[16px]">
             <h1 className="text-[22px] leading-[30px]  not-italic font-semibold">
             Fashion Top Deals
             </h1>
             <div className="flex gap-[10px]">
-              {shoes.slice(0, 8).map((mob) => (
+              {shoes.map((mob) => (
                 <div className="flex flex-col items-center w-[152px]">
                   <div className="w-[152px] h-[152px] transform transition-all duration-300 ease-in-out hover:scale-[1.03] cursor-pointer">
                     <img
@@ -429,13 +429,13 @@ function App() {
       </section>
 
       <section className="2xl:container my-[16px] mx-auto">
-        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto">
+        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto custom-scrollbar">
           <div className="p-[16px]">
             <h1 className="text-[22px] leading-[30px]  not-italic font-semibold">
               Best Deals On Mobile
             </h1>
             <div className="flex gap-[10px]">
-              {smartPhone.slice(0, 8).map((mob) => (
+              {smartPhone.map((mob) => (
                 <div className="flex flex-col items-center w-[152px]">
                   <div className="w-[152px] h-[152px] transform transition-all duration-300 ease-in-out hover:scale-[1.03] cursor-pointer">
                     <img
@@ -458,13 +458,13 @@ function App() {
       </section>
 
       <section className="2xl:container my-[16px] mx-auto">
-        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto">
+        <div className="w-[98%] mx-auto  bg-white  flex items-center min-h-[126px] overflow-auto custom-scrollbar">
           <div className="p-[16px]">
             <h1 className="text-[22px] leading-[30px]  not-italic font-semibold">
             Sports, Healthcare & more
             </h1>
             <div className="flex gap-[10px]">
-              {sports.slice(0,8).map((sp) => (
+              {sports.map((sp) => (
                 <div className="flex flex-col items-center w-[152px]">
                   <div className="w-[152px] h-[152px] transform transition-all duration-300 ease-in-out hover:scale-[1.03] cursor-pointer">
                     <img
