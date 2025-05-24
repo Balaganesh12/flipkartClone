@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #f1f2f4;
+}
+.category-bg{
+    background: linear-gradient(to bottom, rgb(214, 186, 255) 0%, rgb(214 186 255 / 23%) 100%);
+    border: 1px solid rgb(214, 186, 255);
+      }
